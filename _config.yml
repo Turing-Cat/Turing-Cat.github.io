@@ -1,0 +1,35 @@
+title: "你的博客标题"
+description: "你的博客描述"
+baseurl: "" # 如果你使用自定义域名保持空白，否则填你的仓库名称，例如 /your-repo
+url: "https://你的用户名.github.io" # 替换成你的 GitHub Pages URL
+
+theme: minimal-mistakes-jekyll
+
+# 主题配置
+minimal_mistakes_skin: "default" # 可以更改皮肤，例如 dark、solarized、etc
+google_analytics: "" # 可选，填入你的 Google Analytics ID
+
+author:
+  name: "张家辉"
+  avatar: "/assets/images/avatar.png" # 可替换为你上传的头像路径
+  bio: "你的个人简介"
+
+# 社交链接
+social:
+  - name: "GitHub"
+    url: "https://github.com/Turing-Cat"
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "single"
+
+remote_theme: "mmistakes/minimal-mistakes" # 使用远程主题
