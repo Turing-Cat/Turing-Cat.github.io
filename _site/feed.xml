@@ -1,0 +1,49 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>张家辉的博客</title>
+  <subtitle>分享技术笔记和学习心得</subtitle>
+  <updated>2026-01-21T09:30:28+08:00</updated>
+  <author>
+    <name>张家辉</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 张家辉 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="http://localhost:4000/posts/hello-world/" rel="alternate" type="text/html" title="你好，世界！" />
+    <published>2026-01-20T21:00:00+08:00</published>
+  
+    <updated>2026-01-20T21:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/hello-world/</id>
+    <content type="text/html" src="http://localhost:4000/posts/hello-world/" />
+    <author>
+      <name>张家辉</name>
+    </author>
+
+  
+    
+    <category term="随笔" />
+    
+    <category term="生活" />
+    
+  
+
+  <summary>欢迎来到我的博客  这是一篇测试文章，用来验证博客的功能是否正常。  功能测试  1. 数学公式  [E = mc^2]  2. 代码高亮  def hello():     print("Hello, World!")   3. Mermaid 流程图  graph LR     A[开始] --&amp;gt; B{一切正常?}     B --&amp;gt;|是| C[继续写博客]     B --&amp;gt;|否| D[修复 Bug]   希望你喜欢这个新博客！</summary>
+
+  </entry>
+
+</feed>
+
+
