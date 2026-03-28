@@ -1,12 +1,12 @@
 ---
-title: WSL2 + Clash Verge 代理配置总结
+title: WSL2 + Clash Verge 代理配置
 date: 2026-03-28 11:00:00 +0800
 categories: [网络]
 tags: [网络，计算机]
 math: true
 mermaid: true
 ---
-## WSL2 + Clash Verge 代理配置总结
+## WSL2 + Clash Verge 代理配置
 
 ### 问题根因
 WSL2 的 `networkingMode=mirrored` 与 Clash 的 TUN（虚拟网卡）模式冲突，导致 WSL 无法启动。改为 NAT 模式后，`autoProxy=true` 也无法自动传递代理环境变量，需手动配置。
