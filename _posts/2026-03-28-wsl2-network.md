@@ -2,7 +2,7 @@
 title: WSL2 + Clash Verge 代理配置
 date: 2026-03-28 11:00:00 +0800
 categories: [网络]
-tags: [网络，计算机]
+tags: [网络, 计算机]
 math: true
 mermaid: true
 ---
