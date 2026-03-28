@@ -1,0 +1,57 @@
+---
+title: WSL2 + Clash Verge 代理配置总结
+date: 2026-03-28 11:00:00 +0800
+categories: [网络]
+tags: [网络，计算机]
+math: true
+mermaid: true
+---
+## WSL2 + Clash Verge 代理配置总结
+
+### 问题根因
+WSL2 的 `networkingMode=mirrored` 与 Clash 的 TUN（虚拟网卡）模式冲突，导致 WSL 无法启动。改为 NAT 模式后，`autoProxy=true` 也无法自动传递代理环境变量，需手动配置。
+
+---
+
+### 完整操作步骤
+
+**第一步：修改 `.wslconfig`**
+
+在 Windows 的 `%USERPROFILE%\.wslconfig` 中：
+```ini
+[wsl2]
+# networkingMode=mirrored  ← 注释掉或删除
+autoProxy=true
+```
+
+**第二步：确认 Clash Verge 设置**
+- 系统代理 ✅ 开启
+- 局域网连接 ✅ 开启
+- 端口为 `9999`
+- TUN/虚拟网卡模式可关闭（与 WSL2 Mirrored 冲突的根源）
+
+**第三步：找到宿主机 IP**
+```bash
+ip route | grep default | awk '{print $3}'
+# 本例结果：192.168.64.1
+```
+
+**第四步：写入 `~/.bashrc` 或 `~/.zshrc`**
+```bash
+HOST_IP=$(ip route | grep default | awk '{print $3}')
+export http_proxy="http://$HOST_IP:9999"
+export https_proxy="http://$HOST_IP:9999"
+export all_proxy="socks5://$HOST_IP:9999"
+```
+
+**第五步：生效并验证**
+```bash
+source ~/.bashrc
+curl -I https://www.google.com
+```
+
+---
+
+### 注意事项
+- WSL2 重启后宿主机 IP 可能变化，用 `ip route` 动态获取可避免此问题（上面的写法已经是动态的 ✓）
+- 如果之后想恢复 Mirrored 模式，需关闭 Clash 的 TUN 模式，两者不能共存
