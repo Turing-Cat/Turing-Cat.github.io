@@ -35,3 +35,12 @@ curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del in
   "hasCompletedOnboarding": true
 }
 ```
+
+### claude code第三方模型无法命中缓存的解决方案
+```json
+ {
+  "env": {
+
+ "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
+}}
+```
