@@ -37,6 +37,7 @@ curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del in
 ```
 
 ### claude code第三方模型无法命中缓存的解决方案
+在.claude目录下的settings.json中添加
 ```json
  {
   "env": {
