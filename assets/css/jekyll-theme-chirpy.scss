@@ -1,0 +1,228 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ============================================================
+   Custom Color Scheme: Creative Indigo
+   Primary: #6366F1 (Indigo) | Accent: #16A34A (Green)
+   ============================================================ */
+
+/* --- Light Mode Overrides --- */
+html:not([data-mode]),
+html[data-mode='light'] {
+  /* Framework */
+  --main-bg: #EEF2FF;
+  --main-border-color: #E0E7FF;
+
+  /* Text & Headings */
+  --text-color: #2D2B55;
+  --text-muted-color: #71799E;
+  --heading-color: #1E1B4B;
+  --label-color: #5B5D8A;
+
+  /* Links */
+  --link-color: #4F46E5;
+  --link-underline-color: #C7D2FE;
+  --blockquote-border-color: #6366F1;
+  --blockquote-text-color: #71799E;
+
+  /* Buttons */
+  --button-bg: #FFFFFF;
+  --btn-border-color: #C7D2FE;
+  --btn-backtotop-color: #6366F1;
+  --btn-backtotop-border-color: #C7D2FE;
+  --checkbox-checked-color: #6366F1;
+
+  /* Sidebar */
+  --sidebar-bg: #E0E7FF;
+  --sidebar-border-color: #C7D2FE;
+  --site-title-color: #4338CA;
+  --site-subtitle-color: #71799E;
+  --sidebar-muted-color: #71799E;
+  --sidebar-active-color: #312E81;
+  --sidebar-hover-bg: #C7D2FE;
+  --sidebar-btn-bg: #EEF2FF;
+  --sidebar-btn-color: #71799E;
+  --avatar-border-color: #C7D2FE;
+
+  /* Topbar */
+  --topbar-bg: rgb(238 242 255 / 80%);
+  --topbar-text-color: #4338CA;
+  --search-border-color: #C7D2FE;
+  --search-icon-color: #A5B4FC;
+  --input-focus-border-color: #6366F1;
+
+  /* Home page */
+  --post-list-text-color: #5B5D8A;
+  --btn-patinator-text-color: #4F46E5;
+  --btn-paginator-hover-color: #E0E7FF;
+
+  /* Posts */
+  --toc-highlight: #6366F1;
+  --btn-share-color: #71799E;
+  --btn-share-hover-color: #4F46E5;
+  --card-bg: #FFFFFF;
+  --card-hover-bg: #E0E7FF;
+  --card-shadow: rgb(99 102 241 / 8%) 0 2px 8px 0,
+    rgb(99 102 241 / 12%) 0 0 0 1px;
+  --footnote-target-bg: #E0E7FF;
+  --tb-odd-bg: #F5F3FF;
+  --tb-border-color: #E0E7FF;
+  --kbd-wrap-color: #A5B4FC;
+  --kbd-text-color: #2D2B55;
+  --kbd-bg-color: #FFFFFF;
+
+  /* Prompts */
+  --prompt-text-color: rgb(45 43 85 / 80%);
+  --prompt-tip-bg: rgb(22 163 74 / 12%);
+  --prompt-tip-icon-color: #16A34A;
+  --prompt-info-bg: rgb(99 102 241 / 12%);
+  --prompt-info-icon-color: #4F46E5;
+  --prompt-warning-bg: rgb(245 158 11 / 12%);
+  --prompt-warning-icon-color: #D97706;
+  --prompt-danger-bg: rgb(239 68 68 / 12%);
+  --prompt-danger-icon-color: #DC2626;
+
+  /* Tags */
+  --tag-border: #C7D2FE;
+  --tag-shadow: #C7D2FE;
+  --tag-hover: #DDD6FE;
+  --search-tag-bg: #F5F3FF;
+
+  /* Categories */
+  --categories-border: rgb(99 102 241 / 15%);
+  --categories-hover-bg: #E0E7FF;
+  --categories-icon-hover-color: #4338CA;
+
+  /* Archive */
+  --timeline-color: #C7D2FE;
+  --timeline-node-bg: #6366F1;
+  --timeline-year-dot-color: #FFFFFF;
+
+  /* Code */
+  --language-border-color: #E0E7FF;
+  --highlight-bg-color: #F5F3FF;
+  --highlighter-rouge-color: #4338CA;
+  --highlight-lineno-color: #A5B4FC;
+  --inline-code-bg: rgb(99 102 241 / 10%);
+  --code-color: #312E81;
+  --code-header-text-color: #A5B4FC;
+  --code-header-muted-color: #E0E7FF;
+  --code-header-icon-color: #A5B4FC;
+  --clipboard-checked-color: #16A34A;
+
+  --dash-color: #A5B4FC;
+}
+
+/* --- Dark Mode Overrides --- */
+html[data-mode='dark'] {
+  /* Framework */
+  --main-bg: #0B0B1A;
+  --main-border-color: #1E1D35;
+
+  /* Text & Headings */
+  --text-color: #C7D2FE;
+  --text-muted-color: #8E94B8;
+  --text-muted-highlight-color: #A5B4FC;
+  --heading-color: #E0E7FF;
+  --label-color: #A5B4FC;
+
+  /* Links */
+  --link-color: #A5B4FC;
+  --link-underline-color: #4338CA;
+  --blockquote-border-color: #6366F1;
+  --blockquote-text-color: #8E94B8;
+
+  /* Buttons */
+  --button-bg: #1E1D35;
+  --btn-border-color: #312E81;
+  --btn-backtotop-color: #C7D2FE;
+  --btn-backtotop-border-color: #312E81;
+  --checkbox-checked-color: #A5B4FC;
+
+  /* Sidebar */
+  --sidebar-bg: #111128;
+  --sidebar-border-color: #1E1D35;
+  --site-title-color: #A5B4FC;
+  --site-subtitle-color: #8E94B8;
+  --sidebar-muted-color: #8E94B8;
+  --sidebar-active-color: #E0E7FF;
+  --sidebar-hover-bg: #1E1D35;
+  --sidebar-btn-bg: #1E1D35;
+  --sidebar-btn-color: #8E94B8;
+  --avatar-border-color: #6366F1;
+
+  /* Topbar */
+  --topbar-bg: rgb(11 11 26 / 70%);
+  --topbar-text-color: #C7D2FE;
+  --search-border-color: #1E1D35;
+  --search-icon-color: #71799E;
+  --input-focus-border-color: #6366F1;
+
+  /* Home page */
+  --post-list-text-color: #C7D2FE;
+  --btn-patinator-text-color: #C7D2FE;
+  --btn-paginator-hover-color: #1E1D35;
+
+  /* Posts */
+  --toc-highlight: #A5B4FC;
+  --btn-share-color: #8E94B8;
+  --btn-share-hover-color: #C7D2FE;
+  --card-bg: #151530;
+  --card-hover-bg: #1E1D35;
+  --card-shadow: rgb(0 0 0 / 50%) 0 4px 16px 0,
+    rgb(99 102 241 / 8%) 0 0 0 1px;
+  --footnote-target-bg: #312E81;
+  --tb-odd-bg: #151530;
+  --tb-even-bg: #111128;
+  --tb-border-color: #1E1D35;
+  --kbd-wrap-color: #6366F1;
+  --kbd-text-color: #E0E7FF;
+  --kbd-bg-color: #1E1D35;
+
+  /* Prompts */
+  --prompt-text-color: rgb(199 210 254 / 80%);
+  --prompt-tip-bg: rgb(22 163 74 / 20%);
+  --prompt-tip-icon-color: #4ADE80;
+  --prompt-info-bg: rgb(99 102 241 / 20%);
+  --prompt-info-icon-color: #818CF8;
+  --prompt-warning-bg: rgb(245 158 11 / 20%);
+  --prompt-warning-icon-color: #FBBF24;
+  --prompt-danger-bg: rgb(239 68 68 / 20%);
+  --prompt-danger-icon-color: #F87171;
+
+  /* Tags */
+  --tag-border: #3730A3;
+  --tag-shadow: #1E1D35;
+  --tag-hover: #312E81;
+  --search-tag-bg: #1E1D35;
+  --dash-color: #4338CA;
+
+  /* Categories */
+  --categories-border: rgb(99 102 241 / 30%);
+  --categories-hover-bg: #1E1D35;
+  --categories-icon-hover-color: #E0E7FF;
+
+  /* Archive */
+  --timeline-color: #312E81;
+  --timeline-node-bg: #6366F1;
+  --timeline-year-dot-color: #0B0B1A;
+
+  /* Code */
+  --language-border-color: #1E1D35;
+  --highlight-bg-color: #111128;
+  --highlighter-rouge-color: #C7D2FE;
+  --highlight-lineno-color: #71799E;
+  --inline-code-bg: rgb(165 180 252 / 10%);
+  --code-color: #C7D2FE;
+  --code-header-text-color: #71799E;
+  --code-header-muted-color: #1E1D35;
+  --code-header-icon-color: #6366F1;
+  --clipboard-checked-color: #4ADE80;
+}
