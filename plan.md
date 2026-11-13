@@ -242,3 +242,24 @@ git push origin main
 4. 创建示例文章
 5. 本地测试
 6. 推送上线
+
+---
+
+## 🎨 Cloud Style 主题改造（`ui/cloud-style` 分支）
+
+设计语言参照 cloudflare.com：橙 `#F6821F`、近黑 `#1D1D1D` / 近白 `#F7F7F7`、大字号标题、
+等宽小标签、方角、4px 间距网格、实心方按钮。未使用其 logo/插图/文案/商标。
+完整改动说明见 `docs/ui-cloud-style.md`。
+
+### 从 gem 复制的文件（`jekyll-theme-chirpy 7.4.1`）
+
+| 文件 | 来源 | 为什么必须复制 |
+|---|---|---|
+| `_layouts/home.html` | gem 7.4.1 `_layouts/home.html` | 首页卡片原本只输出日期与分类，没有标签。要满足“日期与标签同一行”，必须在模板里插入 `<span class="card-tags">`，CSS 无法生成标签内容。除新增的 8 行标签块外与 gem 完全一致，升级时只需 diff 这一个文件。 |
+
+### 其余改动的落点（不复制 gem 文件）
+
+- `assets/css/jekyll-theme-chirpy.scss`：重写 84 个 Chirpy 变量（亮/暗各 97 条声明），末尾追加覆盖层（排版、卡片、代码块、TOC、标签、分页、侧栏、页脚、Mermaid）。
+- `_includes/metadata-hook.html`：Chirpy 官方自定义 head 挂载点（gem 中仅一行注释），用于 `theme-color` 与加载下面的脚本。
+- `assets/js/cf-mermaid.js`：新增文件。给 Mermaid 套站点配色、修复主题里的无效 ARIA 与键盘不可达的横向滚动区、让已安装 PWA 的设备拿到新样式。
+- `Gemfile`：补 Ruby 3.4 不再默认携带的 `erb`/`csv`/`base64`/`bigdecimal`/`logger`。
