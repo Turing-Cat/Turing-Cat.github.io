@@ -1078,3 +1078,139 @@ search {
   border: 1px solid var(--tag-border);
 }
 
+/* --- 8. Categories, archive timeline --- */
+.categories.card {
+  border: 1px solid var(--cf-hairline);
+  border-radius: 0;
+}
+
+.categories {
+  margin-bottom: 1.5rem;
+
+  .card-header {
+    border-radius: 0;
+    background: var(--cf-quiet-bg);
+    font-weight: 700;
+  }
+
+  .card-header a,
+  .card-header .h4 a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--cf-hairline);
+    text-underline-offset: 3px;
+
+    &:hover {
+      text-decoration-color: var(--cf-accent);
+    }
+  }
+
+  .list-group-item {
+    background-color: var(--card-bg);
+    border-radius: 0;
+    color: var(--text-color);
+
+    a {
+      color: var(--text-color);
+      text-decoration: underline;
+      text-decoration-color: var(--cf-accent);
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+
+      &:hover {
+        color: var(--cf-accent-readable);
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+}
+
+.category-trigger {
+  border-radius: 0;
+}
+
+#archives {
+  .year::after {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  a::before {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  ul li:nth-child(odd) {
+    background-image: none !important;
+    background-color: transparent;
+  }
+
+  ul li {
+    line-height: 2.75rem;
+  }
+
+  .date {
+    font-family: $cf-mono;
+    font-size: 0.8rem;
+  }
+}
+
+/* --- 9. Pagination, buttons, footer --- */
+.pagination {
+  font-family: $cf-mono;
+
+  .page-item {
+    .page-link {
+      border-radius: 0;
+      min-width: 2.5rem;
+      height: 2.5rem;
+      padding: 0 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+    }
+
+    &:not(.active) .page-link:hover {
+      box-shadow: none;
+      border-color: var(--cf-hairline);
+      background: var(--cf-quiet-bg);
+    }
+
+    &.active .page-link {
+      background: var(--cf-pager-active-bg);
+      color: var(--cf-pager-active-fg);
+      font-weight: 700;
+    }
+  }
+}
+
+#back-to-top {
+  border-radius: 0;
+  border: 1px solid var(--btn-backtotop-border-color);
+  color: var(--btn-backtotop-color);
+}
+
+.post-navigation .btn {
+  border-radius: 0 !important;
+}
+
+footer {
+  font-family: $cf-mono;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--cf-hairline);
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+#tail-wrapper .post-tail-wrapper {
+  border-bottom: 1px solid var(--cf-hairline);
+}
+
+.post-tail-wrapper .share-icons > * {
+  border-radius: 0;
+}
+
