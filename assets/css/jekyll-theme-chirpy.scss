@@ -892,3 +892,109 @@ html[data-mode='dark'] {
   }
 }
 
+/* --- 5. Sidebar and topbar --- */
+#sidebar {
+  border-right: 1px solid var(--cf-hairline);
+
+  .site-title {
+    font-size: 1.375rem;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .site-subtitle {
+    font-family: $cf-mono;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  #avatar {
+    border-radius: 0;
+    border: 2px solid var(--avatar-border-color);
+    box-shadow: none;
+  }
+
+  a.nav-link {
+    border-radius: 0;
+    font-weight: 600;
+  }
+
+  .sidebar-bottom {
+    a,
+    #mode-toggle {
+      border-radius: 0;
+    }
+
+    .icon-border {
+      border-radius: 0;
+    }
+  }
+}
+
+#topbar-wrapper {
+  border-bottom: 1px solid var(--cf-hairline);
+  backdrop-filter: blur(8px);
+}
+
+#topbar #breadcrumb {
+  font-family: $cf-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+search {
+  border-radius: 0;
+  background: var(--card-bg);
+
+  #search-input {
+    font-family: $cf-mono;
+    font-size: 0.8rem;
+
+    &::placeholder {
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* --- 5b. Panel headings: monospace eyebrows --- */
+#panel-wrapper .panel-heading,
+#panel-wrapper .panel-heading a {
+  font-family: $cf-mono;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted-color);
+  border-bottom: 1px solid var(--cf-hairline);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* --- 5c. List titles stay ink; the accent is the hover state --- */
+#archives a,
+#page-tag ul > li > a,
+#page-category ul > li > a,
+#access-lastmod a {
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--cf-accent-readable);
+    border-bottom: 1px solid var(--cf-accent);
+  }
+}
+
+#page-tag ul > li > a,
+#page-category ul > li > a,
+#access-lastmod a {
+  text-decoration: underline;
+  text-decoration-color: var(--cf-hairline);
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: var(--cf-accent);
+  }
+}
+
