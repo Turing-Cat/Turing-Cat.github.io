@@ -998,3 +998,83 @@ search {
   }
 }
 
+/* --- 6. TOC --- */
+#toc {
+  .toc-link {
+    font-size: 0.82rem;
+    line-height: 1.5;
+
+    &:hover {
+      color: var(--cf-accent-readable);
+    }
+  }
+
+  .is-active-link {
+    color: var(--cf-accent-readable) !important;
+    font-weight: 700;
+
+    &::before {
+      width: 3px;
+      height: 1.5rem;
+      margin-right: 0.35rem;
+      background-color: var(--cf-accent) !important;
+    }
+  }
+}
+
+#toc-bar {
+  border-bottom: 1px solid var(--cf-hairline);
+
+  .label {
+    font-weight: 700;
+  }
+}
+
+#toc-popup {
+  border-radius: 0;
+  border: 1px solid var(--toc-popup-border-color);
+}
+
+#toc-solo-trigger {
+  border-radius: 0;
+  font-family: $cf-mono;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* --- 7. Tags --- */
+.tag,
+.post-tag {
+  border-radius: 0 !important;
+  box-shadow: none;
+  font-family: $cf-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  padding: 0.25rem 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0.5rem 0.75rem 0;
+}
+
+.tag:hover,
+.post-tag:hover {
+  background: var(--cf-accent);
+  border-color: var(--cf-accent) !important;
+  color: var(--cf-accent-contrast) !important;
+}
+
+#tags > div {
+  margin-bottom: 0.25rem;
+}
+
+.post-tags .post-tag {
+  display: inline-block;
+  margin: 0 0.5rem 0.25rem 0;
+  border: 1px solid var(--tag-border);
+}
+
