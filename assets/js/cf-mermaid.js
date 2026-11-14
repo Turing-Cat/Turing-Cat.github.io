@@ -30,10 +30,28 @@
 
     /* The theme names the previous/next post links only "上一篇"/"下一篇",
        so their accessible name does not contain the visible title. */
+    nameNavs();
+
     document.querySelectorAll('.post-navigation a[aria-label]').forEach((a) => {
       const visible = (a.textContent || '').replace(/\s+/g, ' ').trim();
       const label = a.getAttribute('aria-label');
       if (visible && !label.includes(visible)) a.setAttribute('aria-label', `${label}：${visible}`);
+    });
+  };
+
+  /* Chirpy puts three <nav> landmarks on an article page and labels only the
+     breadcrumb and the prev/next one, so "landmark-unique" fires on every post.
+     Name the rest by what they hold. */
+  const nameNavs = () => {
+    const navs = [
+      ['aside#sidebar nav', '站点导航'],
+      ['#toc', '文章目录'],
+      ['#related-posts nav', '相关文章'],
+    ];
+    navs.forEach(([selector, label]) => {
+      document.querySelectorAll(selector).forEach((nav) => {
+        if (!nav.getAttribute('aria-label')) nav.setAttribute('aria-label', label);
+      });
     });
   };
 

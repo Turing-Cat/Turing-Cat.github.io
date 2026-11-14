@@ -470,7 +470,21 @@ main {
   color: var(--blockquote-text-color);
 }
 
-.content .table-wrapper table {
+.content .table-wrapper > table {
+  /* Chirpy keeps every cell nowrap, which makes any table with a sentence or a
+     command in it scroll sideways. Wrap instead and let long tokens break. */
+  width: 100%;
+
+  th,
+  td {
+    white-space: normal;
+    vertical-align: top;
+  }
+
+  code {
+    overflow-wrap: anywhere;
+  }
+
   thead {
     border-bottom: 1px solid var(--cf-hairline);
   }
