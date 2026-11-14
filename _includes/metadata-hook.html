@@ -1,11 +1,18 @@
 <!-- A placeholder to allow defining custom metadata -->
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF9F5">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1F1E1D">
-<!-- Claude Style: the display serif only styles headings, so load it early and
-     let it swap in; preloading avoids the heading repaint on first paint. -->
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141413">
+<!-- Brand type: Poppins carries the headings, Lora the body copy. Both swap
+     in, so preload the two faces that paint first. -->
 <link
   rel="preload"
-  href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}"
+  href="{{ '/assets/fonts/poppins-600-latin.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/lora-400-latin.woff2' | relative_url }}"
   as="font"
   type="font/woff2"
   crossorigin
