@@ -884,3 +884,97 @@ html[data-mode='dark'] {
   }
 }
 
+/* --- 5. Sidebar and topbar --- */
+#sidebar {
+  border-right: 1px solid var(--cf-hairline);
+
+  .site-title {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  .site-subtitle {
+    font-size: 0.85rem;
+  }
+
+  #avatar {
+    border-radius: 999px;
+    border: 1px solid var(--avatar-border-color);
+    box-shadow: none;
+  }
+
+  a.nav-link {
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  .sidebar-bottom {
+    a,
+    #mode-toggle {
+      border-radius: 999px;
+    }
+
+    .icon-border {
+      border-radius: 50%;
+    }
+  }
+}
+
+#topbar-wrapper {
+  border-bottom: 1px solid var(--cf-hairline);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+#topbar #breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+}
+
+search {
+  border-radius: 999px;
+  background: var(--card-bg);
+
+  #search-input {
+    font-size: 0.85rem;
+  }
+}
+
+/* --- 5b. Panel headings --- */
+#panel-wrapper .panel-heading,
+#panel-wrapper .panel-heading a {
+  font-family: $cf-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--heading-color);
+  border-bottom: 0;
+  padding-bottom: 0.15rem;
+  margin-bottom: 0.6rem;
+}
+
+/* --- 5c. List titles stay ink; the accent is the hover state --- */
+#archives a,
+#page-tag ul > li > a,
+#page-category ul > li > a,
+#access-lastmod a {
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--cf-accent-readable);
+    border-bottom: 1px solid var(--cf-accent);
+  }
+}
+
+#page-tag ul > li > a,
+#page-category ul > li > a,
+#access-lastmod a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: var(--cf-accent);
+  }
+}
+
