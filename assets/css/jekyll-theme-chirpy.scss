@@ -30,122 +30,122 @@
 
   /* Framework color */
   --main-bg: #faf9f5;
-  --mask-bg: #1a1a19;
-  --main-border-color: #e7e3d8;
+  --mask-bg: #141413;
+  --main-border-color: #e3e0d4;
 
   /* Common color */
-  --text-color: #1a1a19;
-  --text-muted-color: #635f58;
-  --text-muted-highlight-color: #a8492b;
-  --heading-color: #1a1a19;
-  --label-color: #6b6862;
-  --blockquote-border-color: #d97757;
-  --blockquote-text-color: #55524c;
-  --link-color: #a8492b;
-  --link-underline-color: #e3c3b4;
+  --text-color: #141413;
+  --text-muted-color: #5d5a53;
+  --text-muted-highlight-color: #a8502f;
+  --heading-color: #141413;
+  --label-color: #5d5a53;
+  --blockquote-border-color: #e3e0d4;
+  --blockquote-text-color: #454340;
+  --link-color: #a8502f;
+  --link-underline-color: #d9b8a6;
   --button-bg: #ffffff;
-  --btn-border-color: #e0dcd1;
-  --btn-backtotop-color: #1a1a19;
-  --btn-backtotop-border-color: #e0dcd1;
-  --checkbox-color: #b6b1a5;
-  --checkbox-checked-color: #a8492b;
-  --img-bg: #f0eee6;
-  --shimmer-bg: linear-gradient(90deg, #f0eee6 0%, #e7e3d8 50%, #f0eee6 100%);
+  --btn-border-color: #e0ddd1;
+  --btn-backtotop-color: #141413;
+  --btn-backtotop-border-color: #e0ddd1;
+  --checkbox-color: #b0aea5;
+  --checkbox-checked-color: #a8502f;
+  --img-bg: #e8e6dc;
+  --shimmer-bg: linear-gradient(90deg, #e8e6dc 0%, #e3e0d4 50%, #e8e6dc 100%);
 
   /* Sidebar */
-  --site-title-color: #1a1a19;
-  --site-subtitle-color: #6b6862;
-  --sidebar-bg: #f0eee6;
-  --sidebar-border-color: #e4e0d6;
-  --sidebar-muted-color: #55524c;
-  --sidebar-active-color: #1a1a19;
-  --sidebar-hover-bg: #e7e3d8;
+  --site-title-color: #141413;
+  --site-subtitle-color: #5d5a53;
+  --sidebar-bg: #e8e6dc;
+  --sidebar-border-color: #ddd9cb;
+  --sidebar-muted-color: #454340;
+  --sidebar-active-color: #141413;
+  --sidebar-hover-bg: #e3e0d4;
   --sidebar-btn-bg: #faf9f5;
-  --sidebar-btn-color: #6b6862;
-  --avatar-border-color: #e0dcd1;
+  --sidebar-btn-color: #5d5a53;
+  --avatar-border-color: #e0ddd1;
 
   /* Topbar */
   --topbar-bg: rgb(250 249 245 / 86%);
-  --topbar-text-color: #1a1a19;
-  --search-border-color: #e0dcd1;
-  --search-icon-color: #8a857b;
+  --topbar-text-color: #141413;
+  --search-border-color: #e0ddd1;
+  --search-icon-color: #8a877f;
   --input-focus-border-color: #d97757;
 
   /* Home page */
-  --post-list-text-color: #635f58;
-  --btn-patinator-text-color: #1a1a19;
-  --btn-paginator-hover-color: #1a1a19;
+  --post-list-text-color: #5d5a53;
+  --btn-patinator-text-color: #141413;
+  --btn-paginator-hover-color: #141413;
 
   /* Posts */
-  --toc-highlight: #a8492b;
-  --toc-popup-border-color: #e7e3d8;
-  --btn-share-color: #6b6862;
-  --btn-share-hover-color: #a8492b;
+  --toc-highlight: #a8502f;
+  --toc-popup-border-color: #e3e0d4;
+  --btn-share-color: #5d5a53;
+  --btn-share-hover-color: #a8502f;
   --card-bg: #ffffff;
-  --card-hover-bg: #f5f2ea;
-  --card-shadow: 0 1px 2px rgb(26 26 25 / 4%), 0 0 0 1px #e7e3d8;
-  --footnote-target-bg: #f3e6df;
+  --card-hover-bg: #f7f5ef;
+  --card-shadow: 0 1px 2px rgb(20 20 19 / 5%), 0 0 0 1px #e3e0d4;
+  --footnote-target-bg: #f7ece5;
   --tb-odd-bg: #ffffff;
-  --tb-even-bg: #fbfaf6;
-  --tb-border-color: #e7e3d8;
-  --dash-color: #d8d4c8;
-  --kbd-wrap-color: #d8d4c8;
-  --kbd-text-color: #1a1a19;
+  --tb-even-bg: #faf9f5;
+  --tb-border-color: #e3e0d4;
+  --dash-color: #d5d1c4;
+  --kbd-wrap-color: #d5d1c4;
+  --kbd-text-color: #141413;
   --kbd-bg-color: #ffffff;
-  --prompt-text-color: #2e2c28;
-  --prompt-tip-bg: #edf3ea;
-  --prompt-tip-icon-color: #3f6b45;
-  --prompt-info-bg: #eef1f4;
-  --prompt-info-icon-color: #3d5a70;
-  --prompt-warning-bg: #faf0e3;
-  --prompt-warning-icon-color: #a8681f;
-  --prompt-danger-bg: #faeae7;
-  --prompt-danger-icon-color: #a6412f;
+  --prompt-text-color: #2b2a27;
+  --prompt-tip-bg: #eef1e8;
+  --prompt-tip-icon-color: #5d6f45;
+  --prompt-info-bg: #eaf0f5;
+  --prompt-info-icon-color: #4f6a86;
+  --prompt-warning-bg: #f8ece3;
+  --prompt-warning-icon-color: #96581a;
+  --prompt-danger-bg: #f8e9e5;
+  --prompt-danger-icon-color: #a8342a;
 
   /* Tags */
-  --tag-border: #e0dcd1;
+  --tag-border: #e0ddd1;
   --tag-shadow: rgb(0 0 0 / 0%);
-  --tag-hover: #f3e6df;
-  --search-tag-bg: #f3f1e9;
+  --tag-hover: #f7ece5;
+  --search-tag-bg: #f2f0e7;
 
   /* Categories */
-  --categories-border: #e7e3d8;
-  --categories-hover-bg: #f3f1e9;
-  --categories-icon-hover-color: #a8492b;
+  --categories-border: #e3e0d4;
+  --categories-hover-bg: #f2f0e7;
+  --categories-icon-hover-color: #a8502f;
 
   /* Archive */
-  --timeline-color: #e7e3d8;
+  --timeline-color: #e3e0d4;
   --timeline-node-bg: #d97757;
   --timeline-year-dot-color: #faf9f5;
 
   /* Code */
-  --language-border-color: #e7e3d8;
-  --highlight-bg-color: #f6f4ed;
-  --highlighter-rouge-color: #1a1a19;
-  --highlight-lineno-color: #6f6b63;
-  --inline-code-bg: #f0ede4;
-  --code-color: #1a1a19;
-  --code-header-text-color: #6b6862;
-  --code-header-muted-color: #ddd8cc;
-  --code-header-icon-color: #6b6862;
-  --clipboard-checked-color: #3f6b45;
-  --filepath-text-color: #6b6862;
+  --language-border-color: #e3e0d4;
+  --highlight-bg-color: #f2f0e7;
+  --highlighter-rouge-color: #141413;
+  --highlight-lineno-color: #6a675f;
+  --inline-code-bg: #eae7dc;
+  --code-color: #141413;
+  --code-header-text-color: #5d5a53;
+  --code-header-muted-color: #d5d1c4;
+  --code-header-icon-color: #5d5a53;
+  --clipboard-checked-color: #5d6f45;
+  --filepath-text-color: #5d5a53;
   --card-header-bg: #ffffff;
 
   /* Claude Style extension tokens */
   --cf-accent: #d97757;
-  --cf-accent-readable: #a8492b;
-  --cf-accent-contrast: #1a1a19;
-  --cf-hairline: #e7e3d8;
-  --cf-quiet-bg: #f3f1e9;
-  --cf-shadow-hover: 0 8px 24px rgb(26 26 25 / 9%);
-  --cf-tip: #cfe0cb;
-  --cf-info: #cdd9e2;
-  --cf-warning: #ecd6b4;
-  --cf-danger: #eec9c0;
-  --cf-pager-active-bg: #1a1a19;
+  --cf-accent-readable: #a8502f;
+  --cf-accent-contrast: #141413;
+  --cf-hairline: #e3e0d4;
+  --cf-quiet-bg: #f2f0e7;
+  --cf-shadow-hover: 0 10px 28px rgb(20 20 19 / 8%);
+  --cf-tip: #cdd8c0;
+  --cf-info: #ccd8e2;
+  --cf-warning: #ecd2b4;
+  --cf-danger: #eec5ba;
+  --cf-pager-active-bg: #141413;
   --cf-pager-active-fg: #faf9f5;
-  --cf-inline-code-color: #a8482a;
+  --cf-inline-code-color: #a04b2b;
 }
 
 /* --- Tokens: dark --- */
@@ -153,123 +153,123 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: #1f1e1d;
+  --main-bg: #141413;
   --mask-bg: #000000;
-  --main-border-color: #3a3a38;
+  --main-border-color: #302e29;
 
   /* Common color */
-  --text-color: #f5f3ec;
-  --text-muted-color: #a9a69d;
+  --text-color: #faf9f5;
+  --text-muted-color: #b0aea5;
   --text-muted-highlight-color: #ffffff;
-  --heading-color: #f5f3ec;
-  --label-color: #a9a69d;
-  --blockquote-border-color: #d97757;
-  --blockquote-text-color: #cfcdc5;
-  --link-color: #e08a6b;
+  --heading-color: #faf9f5;
+  --label-color: #b0aea5;
+  --blockquote-border-color: #e3e0d4;
+  --blockquote-text-color: #c9c6bc;
+  --link-color: #d97757;
   --link-underline-color: #6e4635;
-  --button-bg: #262624;
-  --btn-border-color: #3a3a38;
-  --btn-backtotop-color: #f5f3ec;
-  --btn-backtotop-border-color: #3a3a38;
+  --button-bg: #1f1e1c;
+  --btn-border-color: #302e29;
+  --btn-backtotop-color: #faf9f5;
+  --btn-backtotop-border-color: #302e29;
   --checkbox-color: #6e6b64;
   --checkbox-checked-color: #d97757;
-  --img-bg: #262624;
-  --shimmer-bg: linear-gradient(90deg, #262624 0%, #33322f 50%, #262624 100%);
+  --img-bg: #1f1e1c;
+  --shimmer-bg: linear-gradient(90deg, #1f1e1c 0%, #33322f 50%, #1f1e1c 100%);
 
   /* Sidebar */
-  --site-title-color: #f5f3ec;
-  --site-subtitle-color: #a9a69d;
-  --sidebar-bg: #191918;
+  --site-title-color: #faf9f5;
+  --site-subtitle-color: #b0aea5;
+  --sidebar-bg: #0f0f0e;
   --sidebar-border-color: #333331;
-  --sidebar-muted-color: #a9a69d;
+  --sidebar-muted-color: #b0aea5;
   --sidebar-active-color: #ffffff;
-  --sidebar-hover-bg: #262624;
-  --sidebar-btn-bg: #262624;
-  --sidebar-btn-color: #a9a69d;
-  --avatar-border-color: #3a3a38;
+  --sidebar-hover-bg: #1f1e1c;
+  --sidebar-btn-bg: #1f1e1c;
+  --sidebar-btn-color: #b0aea5;
+  --avatar-border-color: #302e29;
 
   /* Topbar */
-  --topbar-bg: rgb(31 30 29 / 88%);
-  --topbar-text-color: #f5f3ec;
-  --search-border-color: #3a3a38;
-  --search-icon-color: #8f8b83;
+  --topbar-bg: rgb(20 20 19 / 88%);
+  --topbar-text-color: #faf9f5;
+  --search-border-color: #302e29;
+  --search-icon-color: #8f8b82;
   --input-focus-border-color: #d97757;
 
   /* Home page */
-  --post-list-text-color: #cfcdc5;
-  --btn-patinator-text-color: #f5f3ec;
-  --btn-paginator-hover-color: #f5f3ec;
+  --post-list-text-color: #c9c6bc;
+  --btn-patinator-text-color: #faf9f5;
+  --btn-paginator-hover-color: #faf9f5;
 
   /* Posts */
-  --toc-highlight: #e08a6b;
-  --toc-popup-border-color: #3a3a38;
-  --btn-share-color: #a9a69d;
-  --btn-share-hover-color: #e08a6b;
-  --card-bg: #262624;
-  --card-hover-bg: #2e2d2b;
-  --card-shadow: 0 0 0 1px #3a3a38;
+  --toc-highlight: #d97757;
+  --toc-popup-border-color: #302e29;
+  --btn-share-color: #b0aea5;
+  --btn-share-hover-color: #d97757;
+  --card-bg: #1f1e1c;
+  --card-hover-bg: #262521;
+  --card-shadow: 0 0 0 1px #302e29;
   --footnote-target-bg: #4a2f25;
-  --tb-odd-bg: #232221;
-  --tb-even-bg: #1f1e1d;
-  --tb-border-color: #3a3a38;
-  --dash-color: #4a4a47;
-  --kbd-wrap-color: #4a4a47;
-  --kbd-text-color: #f5f3ec;
-  --kbd-bg-color: #262624;
-  --prompt-text-color: #e2e0d8;
-  --prompt-tip-bg: #202b20;
-  --prompt-tip-icon-color: #9bc48f;
-  --prompt-info-bg: #1e2529;
+  --tb-odd-bg: #191817;
+  --tb-even-bg: #141413;
+  --tb-border-color: #302e29;
+  --dash-color: #403e38;
+  --kbd-wrap-color: #403e38;
+  --kbd-text-color: #faf9f5;
+  --kbd-bg-color: #1f1e1c;
+  --prompt-text-color: #e6e3d9;
+  --prompt-tip-bg: #1e241a;
+  --prompt-tip-icon-color: #9bb183;
+  --prompt-info-bg: #1b2228;
   --prompt-info-icon-color: #8fb8d4;
-  --prompt-warning-bg: #2e2620;
+  --prompt-warning-bg: #2b241b;
   --prompt-warning-icon-color: #e8c07a;
-  --prompt-danger-bg: #2e211e;
+  --prompt-danger-bg: #2b1f1c;
   --prompt-danger-icon-color: #e89a8a;
 
   /* Tags */
-  --tag-border: #3a3a38;
+  --tag-border: #302e29;
   --tag-shadow: rgb(0 0 0 / 0%);
-  --tag-hover: #3a2e28;
-  --search-tag-bg: #232221;
+  --tag-hover: #3a2a22;
+  --search-tag-bg: #191817;
 
   /* Categories */
-  --categories-border: #3a3a38;
-  --categories-hover-bg: #2e2d2b;
-  --categories-icon-hover-color: #e08a6b;
+  --categories-border: #302e29;
+  --categories-hover-bg: #262521;
+  --categories-icon-hover-color: #d97757;
 
   /* Archive */
-  --timeline-color: #3a3a38;
+  --timeline-color: #302e29;
   --timeline-node-bg: #d97757;
-  --timeline-year-dot-color: #1f1e1d;
+  --timeline-year-dot-color: #141413;
 
   /* Code */
-  --language-border-color: #3a3a38;
-  --highlight-bg-color: #191918;
-  --highlighter-rouge-color: #f5f3ec;
-  --highlight-lineno-color: #8f8b83;
-  --inline-code-bg: #2e2d2b;
-  --code-color: #f5f3ec;
-  --code-header-text-color: #a9a69d;
-  --code-header-muted-color: #4a4a47;
-  --code-header-icon-color: #a9a69d;
-  --clipboard-checked-color: #9bc48f;
-  --filepath-text-color: #a9a69d;
-  --card-header-bg: #232221;
+  --language-border-color: #302e29;
+  --highlight-bg-color: #0f0f0e;
+  --highlighter-rouge-color: #faf9f5;
+  --highlight-lineno-color: #8f8b82;
+  --inline-code-bg: #262521;
+  --code-color: #faf9f5;
+  --code-header-text-color: #b0aea5;
+  --code-header-muted-color: #403e38;
+  --code-header-icon-color: #b0aea5;
+  --clipboard-checked-color: #9bb183;
+  --filepath-text-color: #b0aea5;
+  --card-header-bg: #191817;
 
   /* Claude Style extension tokens */
   --cf-accent: #d97757;
-  --cf-accent-readable: #e08a6b;
-  --cf-accent-contrast: #1f1e1d;
-  --cf-hairline: #3a3a38;
-  --cf-quiet-bg: #232221;
-  --cf-shadow-hover: 0 8px 24px rgb(0 0 0 / 55%);
-  --cf-tip: #34503a;
-  --cf-info: #33454f;
-  --cf-warning: #5a4429;
-  --cf-danger: #5a3a33;
-  --cf-pager-active-bg: #f5f3ec;
-  --cf-pager-active-fg: #1f1e1d;
-  --cf-inline-code-color: #e8a184;
+  --cf-accent-readable: #d97757;
+  --cf-accent-contrast: #141413;
+  --cf-hairline: #302e29;
+  --cf-quiet-bg: #191817;
+  --cf-shadow-hover: 0 10px 28px rgb(0 0 0 / 60%);
+  --cf-tip: #2b3a26;
+  --cf-info: #26333c;
+  --cf-warning: #4a3a26;
+  --cf-danger: #4a2f28;
+  --cf-pager-active-bg: #faf9f5;
+  --cf-pager-active-fg: #141413;
+  --cf-inline-code-color: #e0a184;
 }
 
 /* An explicit choice always wins. */
@@ -299,27 +299,52 @@ html[data-mode='dark'] {
    Only for what Chirpy variables cannot express.
    ============================================================ */
 
-/* Source Serif 4 (SIL OFL 1.1), latin subset, self-hosted:
-   the closest freely usable stand-in for Claude's display serif. */
+/* Brand typography, self-hosted latin subsets (both SIL OFL 1.1):
+   Poppins for headings and UI, Lora for long-form body copy. Chinese glyphs
+   fall through to the Noto CJK families, which keep the same sans/serif split. */
 @font-face {
-  font-family: 'Source Serif 4';
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400 600;
+  font-weight: 500;
   font-display: swap;
-  src: url('/assets/fonts/source-serif-4-latin.woff2') format('woff2');
+  src: url('/assets/fonts/poppins-500-latin.woff2') format('woff2');
 }
 
-$cf-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Noto Sans SC',
-  'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', arial,
-  sans-serif;
-$cf-serif: 'Source Serif 4', 'Tiempos Headline', georgia, 'Noto Serif SC',
-  'Noto Serif CJK SC', 'Songti SC', 'SimSun', serif;
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/poppins-600-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/assets/fonts/lora-400-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/lora-400i-latin.woff2') format('woff2');
+}
+
+$cf-ui: 'Poppins', 'Noto Sans CJK SC', 'Noto Sans SC', 'PingFang SC',
+  'Microsoft YaHei', 'Hiragino Sans GB', arial, sans-serif;
+$cf-head: $cf-ui;
+$cf-body: 'Lora', 'Noto Serif CJK SC', 'Noto Serif SC', 'Songti SC', 'SimSun',
+  georgia, serif;
 $cf-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'JetBrains Mono',
   'Cascadia Code', menlo, consolas, 'Liberation Mono', monospace;
 
 /* --- 1. Typography --- */
 body {
-  font-family: $cf-sans;
+  font-family: $cf-ui;
   letter-spacing: 0;
 }
 
@@ -332,15 +357,21 @@ h6,
 .site-title,
 #topbar-title,
 .post-desc {
-  font-family: $cf-serif;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-family: $cf-head;
+  font-weight: 600;
+  letter-spacing: -0.005em;
 }
 
 .content {
+  font-family: $cf-body;
   font-size: 17.5px;
   line-height: 1.8;
   letter-spacing: 0;
+}
+
+#post-list .card-text {
+  font-family: $cf-body;
+  line-height: 1.7;
 }
 
 main {
@@ -426,11 +457,16 @@ main {
 
 /* --- 2. Blockquote, tables, prompts --- */
 .content blockquote:not([class^='prompt-']) {
-  border-left: 2px solid var(--blockquote-border-color);
-  background: var(--cf-quiet-bg);
-  border-radius: 10px;
-  padding: 0.9rem 1.2rem;
+  border: 0;
+  border-top: 1px solid var(--cf-hairline);
+  border-bottom: 1px solid var(--cf-hairline);
+  border-radius: 0;
+  background: transparent;
+  padding: 1.1rem 0;
   margin-left: 0;
+  font-family: $cf-body;
+  font-style: italic;
+  font-size: 1.05em;
   color: var(--blockquote-text-color);
 }
 
@@ -452,25 +488,9 @@ main {
 
 .content blockquote[class^='prompt-'] {
   border: 1px solid var(--cf-hairline);
-  border-left-width: 2px;
-  border-radius: 10px;
-  padding: 1rem 1rem 1rem 3.25rem;
-}
-
-.content blockquote.prompt-tip {
-  border-left-color: var(--cf-tip);
-}
-
-.content blockquote.prompt-info {
-  border-left-color: var(--cf-info);
-}
-
-.content blockquote.prompt-warning {
-  border-left-color: var(--cf-warning);
-}
-
-.content blockquote.prompt-danger {
-  border-left-color: var(--cf-danger);
+  border-radius: 8px;
+  padding: 1rem 1.1rem 1rem 3.25rem;
+  font-family: $cf-body;
 }
 
 /* --- 3. Inline code and code blocks --- */
@@ -483,11 +503,11 @@ main {
 }
 
 div[class^='language-'] {
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 0 0 1px var(--cf-hairline);
 
   .content > & {
-    border-radius: 12px;
+    border-radius: 8px;
   }
 
   .highlight {
@@ -503,7 +523,7 @@ div[class^='language-'] {
       line-height: 2.5rem;
 
       &::after {
-        font-family: $cf-sans;
+        font-family: $cf-ui;
         font-size: 0.8rem;
         font-weight: 500;
         color: var(--code-header-text-color);
@@ -661,7 +681,7 @@ html[data-mode='light'] {
     .highlight .sx,
     .highlight .s1,
     .highlight .ss {
-      color: #9bc48f;
+      color: #9bb183;
     }
 
     .highlight .c,
@@ -690,7 +710,7 @@ html[data-mode='light'] {
     .highlight .bp,
     .highlight .no,
     .highlight .py {
-      color: #8fc0dd;
+      color: #8fb0cc;
     }
 
     .highlight .nf,
@@ -744,7 +764,7 @@ html[data-mode='dark'] {
   .highlight .sx,
   .highlight .s1,
   .highlight .ss {
-    color: #9bc48f;
+    color: #9bb183;
   }
 
   .highlight .c,
@@ -773,7 +793,7 @@ html[data-mode='dark'] {
   .highlight .bp,
   .highlight .no,
   .highlight .py {
-    color: #8fc0dd;
+    color: #8fb0cc;
   }
 
   .highlight .nf,
@@ -808,7 +828,7 @@ html[data-mode='dark'] {
   .card {
     background: var(--card-bg);
     border: 1px solid var(--cf-hairline);
-    border-radius: 14px;
+    border-radius: 10px;
     box-shadow: var(--card-shadow);
     transition:
       box-shadow 200ms ease-out,
@@ -944,7 +964,7 @@ search {
 /* --- 5b. Panel headings --- */
 #panel-wrapper .panel-heading,
 #panel-wrapper .panel-heading a {
-  font-family: $cf-serif;
+  font-family: $cf-head;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -1006,13 +1026,13 @@ search {
   border-bottom: 1px solid var(--cf-hairline);
 
   .label {
-    font-family: $cf-serif;
+    font-family: $cf-head;
     font-weight: 600;
   }
 }
 
 #toc-popup {
-  border-radius: 14px;
+  border-radius: 10px;
   border: 1px solid var(--toc-popup-border-color);
 }
 
@@ -1056,7 +1076,7 @@ search {
 /* --- 8. Categories, archive timeline --- */
 .categories.card {
   border: 1px solid var(--cf-hairline);
-  border-radius: 14px;
+  border-radius: 10px;
   box-shadow: var(--card-shadow);
 }
 
@@ -1170,7 +1190,7 @@ search {
 }
 
 .post-navigation .btn {
-  border-radius: 12px !important;
+  border-radius: 8px !important;
 }
 
 footer {
@@ -1225,7 +1245,7 @@ hr {
 }
 
 .preview-img {
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 #search-hints .post-tag,
