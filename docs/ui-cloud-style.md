@@ -221,3 +221,18 @@ Chirpy 每次构建生成新的 `cacheName`（`chirpy-<时间戳>`），但 `sw.
 
 故意没变：栏目结构与 URL、文章正文与图片、摘要截断长度、`paginate: 10` 的密度、
 搜索行为、评论/分享按钮的功能、PWA 开关状态。
+
+## 10. 当前部署方式（临时）
+
+GitHub Actions 因账号 billing lock 无法启动，且 Pages 的 "Deploy from a branch" 构建器装不了 gem 主题
+（`The jekyll-theme-chirpy theme could not be found`，每次 push 都会收到构建失败邮件）。
+
+现在的做法：Pages Source = `gh-pages` 分支，`gh-pages` 是本地构建产物 + `.nojekyll`，
+GitHub 只做静态发布，不经 Jekyll、不耗 Actions 分钟。发布命令：
+
+```bash
+tools/deploy.sh
+```
+
+脚本可选环境变量：`PAGES_BRANCH`（默认 `gh-pages`）、`PAGES_REMOTE`（默认 origin）。
+账单锁解除后，把 Pages Source 改回 "GitHub Actions" 即可恢复 push 自动部署。
