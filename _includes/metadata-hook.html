@@ -1,7 +1,16 @@
 <!-- A placeholder to allow defining custom metadata -->
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7F7F7">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1D1D1D">
-<!-- Cloud Style: give Mermaid the same palette as the rest of the site.
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF9F5">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1F1E1D">
+<!-- Claude Style: the display serif only styles headings, so load it early and
+     let it swap in; preloading avoids the heading repaint on first paint. -->
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+<!-- Claude Style: give Mermaid the same palette as the rest of the site.
      Loaded synchronously, before the theme's deferred scripts, so it can wrap
      `mermaid.initialize`; the theme then renders once, with these tokens, and
      again with them after every light/dark toggle. -->

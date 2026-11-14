@@ -1190,3 +1190,55 @@ footer {
   border-radius: 999px;
 }
 
+/* --- 10. Mermaid --- */
+.content pre.mermaid {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0.5rem 0;
+  margin: 1.5rem -0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  svg {
+    max-width: none;
+    height: auto;
+  }
+}
+
+/* Wide diagrams keep their type size and scroll on a phone; on a desktop
+   column there is room to scale them down to fit instead. */
+@media (width >= 992px) {
+  .content pre.mermaid svg {
+    max-width: 100%;
+  }
+}
+
+/* --- 11. Misc --- */
+kbd {
+  font-family: $cf-mono;
+  border-radius: 6px;
+}
+
+hr {
+  border-color: var(--cf-hairline);
+}
+
+.preview-img {
+  border-radius: 14px;
+}
+
+#search-hints .post-tag,
+#search-results .post-tag {
+  border-radius: 999px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
